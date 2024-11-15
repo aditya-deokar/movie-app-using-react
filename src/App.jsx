@@ -4,7 +4,7 @@ import Home from './components/Home'
 
 const App = () => {
   return (
-    <div className='w-full h-screen bg-slate-900 text-white font-[Open Sans]'>
+    <div className='w-full h-screen bg-slate-950 text-white font-[Open Sans]'>
 
       <Routes>
 
