@@ -1,7 +1,12 @@
-import React from 'react'
+
 import { NavLink } from 'react-router-dom'
 
 const SideNav = () => {
+
+   
+    
+
+
   return (
     <div className="w-[20%] h-screen  border-r-2 border-zinc-800 p-3">
         <h1 className='text-2xl font-semibold'> <span><i className="ri-film-ai-fill text-purple-600 font-normal pr-1"></i></span>Movie App</h1>
