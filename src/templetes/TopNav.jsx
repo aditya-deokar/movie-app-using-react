@@ -32,19 +32,21 @@ const TopNav = () => {
 
 
   return (
-    <div className='w-full h-[10vh]  relative flex justify-start items-center px-10 '>
-      <div className='blur-3xl bg-zinc-800 w-2/3 absolute h-10 top-[100%]'></div>
+    <div className='w-full flex justify-between px-10 items-center'>
 
-      <i className="ri-search-2-line text-violet-300 text-xl"></i> 
-      <input
-      onChange={(e)=>{setQuery(e.target.value)}} 
-      value={query}
-      className='w-1/2 px-4 py-2 mx-5 text-xl outline-none bg-violet-300/20 rounded-3xl relative' type="text" placeholder='search movies or shows' /> 
-   
+      <div className='w-full h-[10vh]  relative flex justify-start items-center  '>
+            <div className='blur-3xl bg-zinc-800 w-2/3 absolute h-10 top-[100%]'></div>
 
-      {
-        query.length>0 && <i onClick={()=>{setQuery("")}} className="ri-close-large-fill text-violet-300 text-xl"></i>
-      }
+            <i className="ri-search-2-line text-violet-300 text-xl"></i> 
+            <input
+            onChange={(e)=>{setQuery(e.target.value)}} 
+            value={query}
+            className='w-1/2 px-4 py-2 mx-5 text-xl outline-none bg-violet-300/20 rounded-3xl relative' type="text" placeholder='search movies or shows' /> 
+        
+
+            {
+              query.length>0 && <i onClick={()=>{setQuery("")}} className="ri-close-large-fill text-violet-300 text-xl"></i>
+            }
 
       
       
@@ -67,6 +69,10 @@ const TopNav = () => {
 
           
          
+      </div>
+      </div>
+      <div> 
+          <i class="text-xl text-purple-400 ri-user-3-fill"></i>
       </div>
     </div>
   )
