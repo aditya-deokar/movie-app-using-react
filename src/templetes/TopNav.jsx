@@ -15,7 +15,7 @@ const TopNav = () => {
       const GetSearches= async()=>{
           try{
               const { data }=await axios.get(`/search/multi?query=${query}`);
-              console.log(data);
+              // console.log(data);
               setSearch(data.results)
 
           }catch(error){
@@ -32,7 +32,8 @@ const TopNav = () => {
 
 
   return (
-    <div className='w-full h-[10vh]  relative flex justify-start items-center px-10'>
+    <div className='w-full h-[10vh]  relative flex justify-start items-center px-10 '>
+      <div className='blur-3xl bg-zinc-800 w-2/3 absolute h-10 top-[100%]'></div>
 
       <i className="ri-search-2-line text-violet-300 text-xl"></i> 
       <input
@@ -48,11 +49,11 @@ const TopNav = () => {
       
       
 
-      <div className='w-1/2 max-h-[50vh] overflow-y-auto bg-violet-300/20 absolute top-[100%]'>
+      <div className='w-1/2 max-h-[50vh] overflow-y-auto bg-zinc-800/90 absolute top-[100%] z-40'>
 
           {
               Search.map((item,i)=>(
-                  <Link key={i} className='p-4 w-full hover:bg-violet-300/20 transition-all ease-in-out duration-300 border-b border-zinc-700 flex justify-start items-center gap-4'>
+                  <Link key={i} className='p-4 w-full hover:bg-violet-400/20 transition-all ease-in-out duration-300 border-b border-zinc-700 flex justify-start items-center gap-4'>
                       <img className='w-32 h-24 object-cover shadow-xl'  
                       src={
                         item.backdrop_path || item.profile_path ?
