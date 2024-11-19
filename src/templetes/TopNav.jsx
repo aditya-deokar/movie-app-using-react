@@ -3,7 +3,7 @@ import axios from '../utils/axios'
 import { Link } from 'react-router-dom'
 import noprofile from "/noprofile.jpg"
 
-const TopNav = () => {
+const TopNav = ({profile}) => {
 
   const [query, setQuery] = useState("");
   // console.log(query);
@@ -35,7 +35,7 @@ const TopNav = () => {
     <div className='w-full flex justify-between px-10 items-center'>
 
       <div className='w-full h-[10vh]  relative flex justify-start items-center  '>
-            <div className='blur-3xl bg-zinc-800 w-2/3 absolute h-10 top-[100%]'></div>
+            <div className='blur-3xl bg-zinc-800 w-2/3 absolute h-10 top-[100%] pointer-events-none'></div>
 
             <i className="ri-search-2-line text-violet-300 text-xl"></i> 
             <input
@@ -72,7 +72,10 @@ const TopNav = () => {
       </div>
       </div>
       <div> 
-          <i className="text-xl text-purple-400 ri-user-3-fill"></i>
+      {
+        profile && <i className="text-xl text-purple-400 ri-user-3-fill"></i>
+      }
+        
       </div>
     </div>
   )
