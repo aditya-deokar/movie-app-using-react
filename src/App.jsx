@@ -2,6 +2,8 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 
+import Trending from './components/Trending'
+
 const App = () => {
   return (
     <div className='w-full h-screen bg-slate-950 text-white font-[Open Sans]'>
@@ -10,6 +12,9 @@ const App = () => {
 
           <Route path='/' 
                   element={ <Home />}
+          />
+          <Route path='/trending' 
+                  element={ <Trending />}
           />
 
       </Routes>
