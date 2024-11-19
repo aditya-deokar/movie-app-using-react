@@ -72,7 +72,7 @@ const TopNav = () => {
       </div>
       </div>
       <div> 
-          <i class="text-xl text-purple-400 ri-user-3-fill"></i>
+          <i className="text-xl text-purple-400 ri-user-3-fill"></i>
       </div>
     </div>
   )

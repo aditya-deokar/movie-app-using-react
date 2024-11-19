@@ -13,12 +13,17 @@ const SideNav = () => {
         <nav className='flex flex-col gap-2 p-4'>
             <h1 className='text-xl font-semibold my-6'>New Feeds</h1>
 
-            <NavLink className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150 ">
+            <NavLink to="/trending " className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150 ">
                 <span><i className="ri-fire-fill  text-purple-400 font-normal pr-1"></i></span>Treanding</NavLink>
+
             <NavLink className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150"><span><i className="ri-bard-fill text-purple-400 font-normal pr-1"></i></span>Popular</NavLink>
+
             <NavLink className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150"><span><i className="ri-movie-2-fill  text-purple-400 font-normal pr-1"></i></span>Movies</NavLink>
+
             <NavLink className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150" ><span><i className="ri-tv-fill  text-purple-400 font-normal pr-1"></i></span>TV Shows</NavLink>
+
             <NavLink className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150"><span><i className="ri-group-fill  text-purple-400 font-normal pr-1"></i></span>Peoples</NavLink>
+
 
         </nav>
 
