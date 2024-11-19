@@ -5,6 +5,7 @@ import TopNav from "../templetes/TopNav";
 import { useEffect, useState } from "react";
 import TrendingSection from "../templetes/TrendingSection";
 import Loading from "./Loading";
+import DropdownMenu from "../templetes/DropdownMenu";
 
 const Home = () => {
       document.title="Movie App | Home Page";
@@ -45,19 +46,12 @@ const Home = () => {
         <SideNav/>
      
         <div className="w-[80%] h-screen overflow-x-hidden">
-            <TopNav/>
+            <TopNav profile />
              <Hero data={Wallpaper} />
 
              <div className='flex justify-between items-center px-8 py-5 overflow-x-hidden'>
               <h1 className='text-2xl'>Trending</h1>
-                <div>
-                    <label className='bg-slate-900 px-2 py-1 rounded-md' htmlFor="trend" >Categories:</label>
-                    <select onChange={(e)=>setCategory(e.target.value)}  className='bg-slate-900 border-none outline-none px-3 py-1 ml-2 rounded-md' name="trend" id="trend">
-                        <option value="all">all</option>
-                        <option value="movie">movie</option>
-                        <option value="tv">tv</option>
-                    </select>
-                </div>
+               <DropdownMenu func={(e)=>setCategory(e.target.value)} name={"category"} options={ ["all" ,"movie" , "tv"]} />
             </div>
 
              <TrendingSection data={ TrendingMovie }  />

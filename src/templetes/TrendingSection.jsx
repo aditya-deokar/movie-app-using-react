@@ -1,6 +1,6 @@
 import MovieCard from './MovieCard'
 
-const TrendingSection = ({data }) => {
+const TrendingSection = ({ data }) => {
 
     // console.log(data)
     
