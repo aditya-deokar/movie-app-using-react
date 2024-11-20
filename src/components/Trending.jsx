@@ -18,8 +18,8 @@ const Trending = () => {
 
   const navigate=useNavigate();
 
-  console.log(moviedata);
-  console.log(page)
+  // console.log(moviedata);
+  // console.log(page)
 
   
 
