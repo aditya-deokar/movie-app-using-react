@@ -21,9 +21,9 @@ const SideNav = () => {
 
             <NavLink to="/allmovies" className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150"><span><i className="ri-movie-2-fill  text-purple-400 font-normal pr-1"></i></span>Movies</NavLink>
 
-            <NavLink className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150" ><span><i className="ri-tv-fill  text-purple-400 font-normal pr-1"></i></span>TV Shows</NavLink>
+            <NavLink to="/tvseries" className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150" ><span><i className="ri-tv-fill  text-purple-400 font-normal pr-1"></i></span>TV Shows</NavLink>
 
-            <NavLink className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150"><span><i className="ri-group-fill  text-purple-400 font-normal pr-1"></i></span>Peoples</NavLink>
+            <NavLink to="/peoples" className="px-3 py-2 hover:bg-indigo-600 transition-all ease-in-out duration-150"><span><i className="ri-group-fill  text-purple-400 font-normal pr-1"></i></span>Peoples</NavLink>
 
 
         </nav>
