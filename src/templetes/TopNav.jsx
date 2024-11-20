@@ -32,7 +32,7 @@ const TopNav = ({profile}) => {
 
 
   return (
-    <div className='w-full flex justify-between px-10 items-center'>
+    <div className='w-full flex justify-between px-10 items-center sticky top-0 z-40 bg-slate-950/50'>
 
       <div className='w-full h-[10vh]  relative flex justify-start items-center  '>
             <div className='blur-3xl bg-zinc-800 w-2/3 absolute h-10 top-[100%] pointer-events-none'></div>
@@ -51,7 +51,7 @@ const TopNav = ({profile}) => {
       
       
 
-      <div className='w-1/2 max-h-[50vh] overflow-y-auto bg-zinc-800/90 absolute top-[100%] z-40'>
+      <div className='w-full max-h-[50vh] overflow-y-auto bg-zinc-800/90 absolute top-[100%] z-40'>
 
           {
               Search.map((item,i)=>(
