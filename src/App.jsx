@@ -4,6 +4,7 @@ import Home from './components/Home'
 
 import Trending from './components/Trending'
 import Popular from './components/Popular'
+import Movies from './components/Movies'
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
           />
           <Route path='/popular' 
                   element={ <Popular />}
+          />
+          <Route path='/allmovies' 
+                  element={ <Movies/>}
           />
 
       </Routes>
