@@ -20,16 +20,14 @@ const Popular = () => {
         try{
             
             const  {data} = await axios.get(`https://api.themoviedb.org/3/movie/popular?page=${page}`);
-      // setMoviedata(data.results);
-
-        if(data.results.length > 0){
-            setMoviedata((prevMovie)=>[...prevMovie , ...data.results]);
-            setPage(page + 1);
-        }else{
-            sethasMore(false);
-        }
-            
-
+     
+            if(data.results.length > 0){
+                setMoviedata((prevMovie)=>[...prevMovie , ...data.results]);
+                setPage(page + 1);
+            }else{
+                sethasMore(false);
+            }
+                
         }catch(e){
             console.log("error",e);
         }
